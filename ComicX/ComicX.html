@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>ComicX</title>
+
+<style>
+
+/* Base */
+html, body{
+    height:100%;
+    margin:0;
+}
+
+body{
+    font-family: Arial;
+    background:url("https://i.postimg.cc/d0khKtbs/Comic-X-wallpaper.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color:white;
+    text-align:center;
+}
+
+/* Botón volver */
+.boton-volver{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.boton-volver:hover{
+    background: rgba(0,0,0,0.9);
+    transform: scale(1.1);
+}
+
+/* Título */
+.titulo{
+    font-size:80px;
+    margin-top:30px;
+    color:#00D1A4;
+    text-shadow:3px 3px 15px black;
+}
+
+.subtitulo{
+    font-size:30px;
+    color:#02DEDB;
+    margin-bottom:45px;
+    text-shadow:2px 2px 10px black;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:35px; /* un poco más de espacio */
+    padding:40px;
+    max-width:1800px; /* 🔥 más ancho = tarjetas más grandes */
+    margin:auto;
+}
+
+/* Tablet */
+@media (min-width:768px){
+    .grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Laptop */
+@media (min-width:1024px){
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* 🔥 Pantalla grande → 6 columnas MÁS GRANDES */
+@media (min-width:1400px){
+    .grid{
+        grid-template-columns: repeat(6, minmax(220px, 1fr));
+    }
+}
+
+/* Tarjetas */
+.tarjeta{
+    text-decoration:none;
+    color:white;
+}
+
+/* Proporción 3:4 */
+.img-container{
+    width:100%;
+    aspect-ratio: 3 / 4;
+    overflow:hidden;
+    border-radius:18px; /* ligeramente más grande */
+    border:3px solid white;
+}
+
+/* Imagen */
+.img-container img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:0.3s;
+}
+
+.img-container:hover img{
+    transform:scale(1.08); /* un poco más notable */
+}
+
+.tarjeta p{
+    margin-top:12px;
+    font-size:19px; /* texto un poco más grande */
+}
+
+/* Responsive texto */
+@media (max-width:600px){
+    .titulo{
+        font-size:45px;
+    }
+
+    .subtitulo{
+        font-size:20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<a href="../index.html" class="boton-volver">←</a>
+
+<h1 class="titulo">ComicX</h1>
+<h2 class="subtitulo">Selecciona un Comic</h2>
+
+<div class="grid">
+
+    <a href="https://chochox.com/carla-en-la-oficina-del-jefe-marioa13/" target="_blank" class="tarjeta">
+
+        <div class="img-container">
+            <img src="https://wimg.rule34.xxx//samples/1928/sample_7148bd80179da623e5b44f2b3df582fc.jpg?12416012">
+        </div>
+        <p>Carla en la Oficina del Jefe</p>
+    </a>
+
+    <a href="https://chochox.com/carla-en-la-oficina-de-karla-marioa13/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://wimg.rule34.xxx//samples/1158/sample_1605c6a659b4911874d85c4e0c6f90de.jpg?13940797">
+        </div>
+        <p>Carla en la Oficina de Karla</p>
+    </a>
+
+    <a href="https://vercomicsporno.com/sincrescent-estrus-howls-of-cerberus-furry-porn" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/HC95RobbcAA4qsL?format=jpg&name=large">
+        </div>
+        <p>Estrus: Howls Of Cerberus: Capitulo 1</p>
+    </a>
+
+    <a href="https://vercomicsporno.com/sincrescent-estrus-howls-of-cerberus-2-furry-porn" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/Gk4VGynWoAEba8y?format=jpg&name=4096x4096">
+        </div>
+        <p>Estrus: Howls Of Cerberus: Capitulo 2</p>
+
+    <a href="https://chochox.com/amazing-surprise-gumball-comic-porno/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/GIWUEAXWUAAdBSY?format=jpg&name=medium">
+        </div>
+        <p>The Amazing Surprise #1</p>
+    </a>
+
+    <a href="https://chochox.com/the-amazing-surprise-2-harkart/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/GDU_-gXWoAAEMfB?format=jpg&name=large">
+        </div>
+        <p>The Amazing Surprise #2</p>
+    </a>
+
+    <a href="https://chochox.com/a-night-with-loona-jizoku-comic-porno/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://wimg.rule34.xxx//samples/4411/sample_6f8ba7a2e9c37ce7edc09b354abdfdd0.jpg?5023742">
+        </div>
+        <p>A Night with Loona</p>
+    </a>
+
+    <a href="https://chochox.com/a-night-with-loona-2-jizoku-xxx/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://wimg.rule34.xxx//samples/7502/sample_246c7cabf8fee3b43748537d512260b1.jpg?8559795">
+        </div>
+        <p>A Night with Loona 2</p>
+    </a>
+
+    <a href="https://chochox.com/a-night-with-loona-3-jizoku/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://wimg.rule34.xxx//samples/2219/sample_31705725de775cc002f08cab0419a24f.jpg?15040941">
+        </div>
+        <p>A Night with Loona 3</p>
+    </a>
+
+    <a href="https://chochox.com/perfect-present-prokylan/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/HBNs8e3aoAAwQgJ?format=jpg&name=4096x4096">
+        </div>
+        <p>Perfect Present</p>
+    </a>
+
+    <a href="https://chochox.com/uzis-game-rodakihiro/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/HCsTQkIWYAALOIg?format=jpg&name=large">
+        </div>
+        <p>Uzi’s Game</p>
+    </a>
+
+    <a href="https://chochox.com/lecciones-con-lily-srm4nny/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/QdmvLFXS/Lecciones-con-Lily.webp">
+        </div>
+        <p>Lecciones con Lily</p>
+    </a>
+
+    <a href="https://chochox.com/prophecy-viktria/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://m.media-amazon.com/images/I/710f-T8QP-L._AC_UF1000,1000_QL80_.jpg">
+        </div>
+        <p>Prophecy</p>
+    </a>
+
+    <a href="https://chochox.com/prophecy-2-zummeng/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://d.furaffinity.net/art/viktria/1709557788/1709557788.viktria_03_04__-_prophecy_2_pg__0.png">
+        </div>
+        <p>Prophecy 2</p>
+    </a>
+
+    <a href="https://chochox.com/stellas-secret-room-chromatic/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/GCUXGmcWUAAH5B-?format=jpg&name=small">
+        </div>
+        <p>Stella´s Secret Room</p>
+    </a>
+
+    <a href="https://chochox.com/easy-brakali/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://preview.redd.it/easy-brakali-v0-0l2duo3j2ijg1.jpg?width=1080&crop=smart&auto=webp&s=6bb073912f0ca9e3321f5c4b2d5af863ea138394">
+        </div>
+        <p>Easy</p>
+    </a>
+
+    <a href="https://chochox.com/party-in-ipanema-baby-drako1997/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://melapelocondibujos.com/wp-content/uploads/2023/11/01_01.jpg">
+        </div>
+        <p>Party In Ipanema Baby</p>
+    </a>
+
+    <a href="https://chochox.com/mas-alla-de-los-cielos-jaiden-comic-porno-chochox/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/Ef9xjlxUcAEyVTs?format=jpg&name=large">
+        </div>
+        <p>Beyond The Skies</p>
+    </a>
+
+    <a href="https://chochox.com/petals-of-sin-lalo-oliv/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/G4jVgIIW8AAF3A2?format=jpg&name=4096x4096">
+        </div>
+        <p>Petals of Sin</p>
+    </a>
+
+    <a href="https://chochox.com/solo-un-reto-long-tao/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/GgpAackXAAACANQ?format=jpg&name=4096x4096">
+        </div>
+        <p>Solo un Reto</p>
+    </a>
+
+    <a href="https://chochox.com/my-dear-lily-comic-hentai/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/G3zXd_yWkAAP7c7?format=jpg&name=4096x4096">
+        </div>
+        <p>My Dear Lily</p>
+    </a>
+
+    <a href="https://chochox.com/maomao-niui/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/GnTmMK5WgAATvIs?format=jpg&name=4096x4096">
+        </div>
+        <p>Maomao|The Apothecary Diaries</p>
+    </a>
+
+    <a href="https://chochox.com/bocchi-the-rock-elferdiart/" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://pbs.twimg.com/media/GR5arxXW0AA7y0Z?format=jpg&name=4096x4096">
+        </div>
+        <p>Noche de Chicas de Banda</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+    <a href="__" target="_blank" class="tarjeta">
+        <div class="img-container">
+            <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        </div>
+        <p>[ En Progreso ]</p>
+    </a>
+
+
+
+</div>
+
+</body>
+</html>

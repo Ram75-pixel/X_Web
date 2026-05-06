@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Animación</title>
+
+<style>
+body{
+    background:#111;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+    margin:0;
+}
+
+/* Botón volver */
+.boton-volver{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    background: rgba(0,0,0,0.6);
+    padding: 8px 12px;
+    border-radius: 10px;
+    transition: 0.3s;
+    z-index: 1000;
+}
+
+.boton-volver:hover{
+    background: rgba(0,0,0,0.9);
+    transform: scale(1.1);
+}
+
+/* Grid de videos */
+.grid{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+    margin-top:40px;
+}
+
+/* Tarjeta */
+.video{
+    width:200px;
+}
+
+.video img{
+    width:100%;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.video img:hover{
+    transform:scale(1.05);
+}
+
+/* Título */
+.video p{
+    margin-top:8px;
+}
+
+/* Botón invisible (link) */
+.video a{
+    text-decoration:none;
+    color:white;
+}
+</style>
+</head>
+
+<body>
+
+<!--  Botón regresar -->
+<a href="PornHub.html" class="boton-volver">←</a>
+
+<h1>Videos</h1>
+
+<div class="grid">
+
+    <div class="video">
+        <a href="https://es.pornhub.com/view_video.php?viewkey=69caaecb01e68" target="_blank">
+            <img src="https://wimg.rule34.xxx//samples/4246/sample_748ad8b90275ddabd315a38554595645.jpg?4829252">
+            <p>Charlotte&June (Derpixon)</p>
+        </a>
+    </div>
+
+    <div class="video">
+        <a href="https://es.pornhub.com/view_video.php?viewkey=6952e701b462b" target="_blank">
+            <img src="https://pix-fl.phncdn.com/c6251/videos/202512/29/34228025/original/019b6c60-9809-7289-8b41-2721997101dd.png/plain/rs:fit:320:180?hdnea=st=1777339291~exp=1777425691~hdl=-1~hmac=ce27d03dbfde6e776fafe5585b8a7b2bb863c4fa">
+            <p>La Ducha de Audrey</p>
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>
