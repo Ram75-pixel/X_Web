@@ -20,17 +20,29 @@ body{
     text-align:center;
 }
 
-/* Botón volver */
+/* ========================= */
+/* BOTÓN VOLVER */
+/* ========================= */
+
 .boton-volver{
     position: fixed;
     top: 20px;
     left: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
     font-size: 30px;
     text-decoration: none;
     color: white;
+
     background: rgba(0,0,0,0.6);
-    padding: 10px 15px;
-    border-radius: 10px;
+
+    border-radius: 12px;
     transition: 0.3s;
     z-index: 1000;
 }
@@ -38,6 +50,72 @@ body{
 .boton-volver:hover{
     background: rgba(0,0,0,0.9);
     transform: scale(1.1);
+}
+
+/* ========================= */
+/* BOTÓN HOME */
+/* ========================= */
+
+.boton-home{
+    position: fixed;
+    top: 20px;
+    left: 90px;
+
+    width: 55px;
+    height: 55px;
+
+    background:#A10202;
+
+    border-radius:12px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:0.3s;
+    z-index:1000;
+}
+
+.boton-home:hover{
+    background:#c40000;
+    transform:scale(1.1);
+}
+
+/* Casa */
+.casa{
+    position: relative;
+    width: 26px;
+    height: 26px;
+}
+
+/* Techo SOLO bordes */
+.techo{
+    position:absolute;
+    top:2px;
+    left:4px;
+
+    width:14px;
+    height:14px;
+
+    border-top:4px solid white;
+    border-left:4px solid white;
+
+    transform: rotate(45deg);
+}
+
+/* Cuerpo SOLO bordes */
+.cuerpo{
+    position:absolute;
+    bottom:1px;
+    left:5px;
+
+    width:16px;
+    height:12px;
+
+    border:4px solid white;
+    border-top:none;
+
+    box-sizing:border-box;
 }
 
 /* Título */
@@ -134,7 +212,18 @@ body{
 
 <body>
 
+<!-- BOTÓN VOLVER -->
 <a href="../index.html" class="boton-volver">←</a>
+
+<!-- BOTÓN HOME -->
+<a href="../index.html" class="boton-home">
+
+    <div class="casa">
+        <div class="techo"></div>
+        <div class="cuerpo"></div>
+    </div>
+
+</a>
 
 <h1 class="titulo">ComicX</h1>
 <h2 class="subtitulo">Selecciona un Comic</h2>
@@ -399,41 +488,42 @@ body{
         </div>
         <p>[ En Progreso ]</p>
     </a>
-        
+
     <a href="__" target="_blank" class="tarjeta">
         <div class="img-container">
             <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
         </div>
         <p>[ En Progreso ]</p>
     </a>
-        
+
     <a href="__" target="_blank" class="tarjeta">
         <div class="img-container">
             <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
         </div>
         <p>[ En Progreso ]</p>
     </a>
-        
+
     <a href="__" target="_blank" class="tarjeta">
         <div class="img-container">
             <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
         </div>
         <p>[ En Progreso ]</p>
     </a>
-        
+
     <a href="__" target="_blank" class="tarjeta">
         <div class="img-container">
             <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
         </div>
         <p>[ En Progreso ]</p>
     </a>
-        
+
     <a href="__" target="_blank" class="tarjeta">
         <div class="img-container">
             <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
         </div>
         <p>[ En Progreso ]</p>
     </a>
+
 
 
 
