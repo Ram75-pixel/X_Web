@@ -13,7 +13,7 @@ html, body{
 
 /* Fondo (provisional) */
 body{
-    background:url("https://i.postimg.cc/sxSQGPjR/XHistories-fondo.jpg") no-repeat center/cover fixed;
+    background:url("https://i.postimg.cc/D0PhFrBj/Rule34-Fondo.png") no-repeat center/cover fixed;
     color:white;
 }
 
@@ -35,6 +35,70 @@ body{
     background: rgba(0,0,0,0.9);
     transform: scale(1.1);
 }
+
+/* Botón Home */
+
+.boton-home{
+    position: fixed;
+    top: 20px;
+    left: 90px;
+
+    width: 55px;
+    height: 55px;
+
+    background:#A10202;
+
+    border-radius:12px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:0.3s;
+    z-index:1000;
+}
+
+.boton-home:hover{
+    background:#A10202;
+    transform:scale(1.1);
+}
+
+/* Casa */
+
+.casa{
+    position: relative;
+    width: 26px;
+    height: 26px;
+}
+
+.techo{
+    position:absolute;
+    top:2px;
+    left:4px;
+
+    width:14px;
+    height:14px;
+
+    border-top:4px solid white;
+    border-left:4px solid white;
+
+    transform: rotate(45deg);
+}
+
+.cuerpo{
+    position:absolute;
+    bottom:1px;
+    left:5px;
+
+    width:16px;
+    height:12px;
+
+    border:4px solid white;
+    border-top:none;
+
+    box-sizing:border-box;
+}
+
 
 /* Título */
 .titulo{
@@ -91,24 +155,35 @@ body{
 <body>
 
 <!-- Regresar a página principal -->
+<!-- BOTÓN VOLVER -->
 <a href="../index.html" class="boton-volver">←</a>
+
+<!-- BOTÓN HOME -->
+<a href="../index.html" class="boton-home">
+
+    <div class="casa">
+        <div class="techo"></div>
+        <div class="cuerpo"></div>
+    </div>
+
+</a>
 
 <h1 class="titulo">Rule34</h1>
 
 <div class="grid">
 
-    <a href="Galeria1.html" class="tarjeta">
-        <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
-        <p>Galería 1</p>
+    <a href="Galeria-Rayla.html" class="tarjeta">
+        <img src="https://wimg.rule34.xxx//images/476/fdf3b53131e77cfee6ed1555206a83c2.jpeg?11161868">
+        <p>Rayla</p>
     </a>
 
-    <a href="Galeria2.html" class="tarjeta">
-        <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
-        <p>Galería 2</p>
+    <a href="Galeria-Cyn.html" class="tarjeta">
+        <img src="https://wimg.rule34.xxx//images/781/9de524c204f3b9d2fe565da4c00c3ad3.jpeg?9853796">
+        <p>Cyn</p>
     </a>
 
     <a href="Galeria3.html" class="tarjeta">
-        <img src="https://i.postimg.cc/yYzkG3V2/En-Progreso-(Img).jpg">
+        <img src="https://i.postimg.cc/xj72LdbG/Proximamente-(Img).jpg">
         <p>Galería 3</p>
     </a>
 
