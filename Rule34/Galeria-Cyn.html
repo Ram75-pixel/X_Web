@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cyn / Cynessa</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:url("https://wimg.rule34.xxx//images/781/9de524c204f3b9d2fe565da4c00c3ad3.jpeg?9853796") no-repeat center center fixed;
+    background-size:cover;
+    color:white;
+}
+
+/* BOTÓN VOLVER */
+
+.boton-volver{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+
+    background: rgba(0,0,0,0.6);
+
+    border-radius: 12px;
+    transition: 0.3s;
+    z-index: 10000;
+}
+
+.boton-volver:hover{
+    background: rgba(0,0,0,0.9);
+    transform: scale(1.1);
+}
+
+/* BOTÓN HOME */
+
+.boton-home{
+    position: fixed;
+    top: 20px;
+    left: 90px;
+
+    width: 55px;
+    height: 55px;
+
+    background:#A10202;
+
+    border-radius:12px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:0.3s;
+    z-index:10000;
+}
+
+.boton-home:hover{
+    background:#A10202;
+    transform:scale(1.1);
+}
+
+/* CASA */
+
+.casa{
+    position: relative;
+    width: 26px;
+    height: 26px;
+}
+
+.techo{
+    position:absolute;
+    top:2px;
+    left:4px;
+
+    width:14px;
+    height:14px;
+
+    border-top:4px solid white;
+    border-left:4px solid white;
+
+    transform: rotate(45deg);
+}
+
+.cuerpo{
+    position:absolute;
+    bottom:1px;
+    left:5px;
+
+    width:16px;
+    height:12px;
+
+    border:4px solid white;
+    border-top:none;
+
+    box-sizing:border-box;
+}
+
+/* CONTENIDO */
+
+.contenedor{
+    max-width:1800px;
+    margin:auto;
+    padding:80px 25px 50px;
+}
+
+.titulo{
+    text-align:center;
+    font-size:3em;
+    margin-bottom:25px;
+    text-shadow:0 0 15px black;
+}
+
+.resumen{
+    background:rgba(0,0,0,0.7);
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:35px;
+    text-align:center;
+}
+
+/* GALERÍA */
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    gap:15px;
+}
+
+.galeria img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.galeria img:hover{
+    transform:scale(1.03);
+}
+
+/* LIGHTBOX */
+
+.lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.97);
+    z-index:9999;
+}
+
+.lightbox.activo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.lightbox img{
+    width:auto;
+    height:auto;
+
+    max-width:98vw;
+    max-height:98vh;
+
+    border-radius:10px;
+}
+
+/* CERRAR */
+
+.cerrar{
+    position:absolute;
+    top:15px;
+    right:30px;
+    font-size:55px;
+    cursor:pointer;
+    user-select:none;
+    color:#910000;
+    font-weight:bold;
+}
+
+/* FLECHAS */
+
+.flecha{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:70px;
+    cursor:pointer;
+    user-select:none;
+    padding:20px;
+    color:#89D189;
+    font-weight:bold;
+}
+
+.izquierda{
+    left:15px;
+}
+
+.derecha{
+    right:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- BOTÓN VOLVER -->
+<a href="Rule.html" class="boton-volver">←</a>
+
+<!-- BOTÓN HOME -->
+<a href="../index.html" class="boton-home">
+
+    <div class="casa">
+        <div class="techo"></div>
+        <div class="cuerpo"></div>
+    </div>
+
+</a>
+
+<div class="contenedor">
+
+<h1 class="titulo">
+    Rayla
+</h1>
+
+<div class="resumen">
+    [El punto más alto de la evolucón física del Solver]
+</div>
+
+<div class="galeria">
+
+    <img src="https://wimg.rule34.xxx//images/7585/a33dec8b0b79a59e0ffab4193320f02b.jpeg?8653904" onclick="abrir(0)">
+
+    <img src="https://wimg.rule34.xxx//images/7677/7fe792ec6a5fe36fca7366544f332101.png?8762247" onclick="abrir(1)">
+
+    <img src="https://wimg.rule34.xxx//samples/7590/sample_324294d5b88efd31d4e6f9bc5722f05a.jpg?8658679" onclick="abrir(2)">
+
+    <img src="https://wimg.rule34.xxx//samples/7685/sample_9cd525cf823394ba33716abca9526801.jpg?8773866" onclick="abrir(3)">
+
+    <img src="https://wimg.rule34.xxx//images/64/b0504e3f8bc88804e9a0b3f6381297dc.jpeg?17429606" onclick="abrir(4)">
+
+    <img src="https://wimg.rule34.xxx//samples/1857/sample_81e6290a7f4eb3188faae75752f439ca.jpg?17517267" onclick="abrir(5)">
+
+    <img src="https://wimg.rule34.xxx//images/781/9de524c204f3b9d2fe565da4c00c3ad3.jpeg?9853796" onclick="abrir(6)">
+
+
+</div>
+
+</div>
+
+<div class="lightbox" id="lightbox">
+
+    <span class="cerrar" onclick="cerrar()">×</span>
+
+    <div class="flecha izquierda" onclick="anterior()">❮</div>
+
+    <img id="imagenGrande">
+
+    <div class="flecha derecha" onclick="siguiente()">❯</div>
+
+</div>
+
+<script>
+
+const imagenes = [
+
+"https://wimg.rule34.xxx//images/7585/a33dec8b0b79a59e0ffab4193320f02b.jpeg?8653904",
+
+"https://wimg.rule34.xxx//images/7677/7fe792ec6a5fe36fca7366544f332101.png?8762247",
+
+"https://wimg.rule34.xxx//samples/7590/sample_324294d5b88efd31d4e6f9bc5722f05a.jpg?8658679",
+
+"https://wimg.rule34.xxx//samples/7685/sample_9cd525cf823394ba33716abca9526801.jpg?8773866",
+
+"https://wimg.rule34.xxx//images/64/b0504e3f8bc88804e9a0b3f6381297dc.jpeg?17429606",
+
+"https://wimg.rule34.xxx//samples/1857/sample_81e6290a7f4eb3188faae75752f439ca.jpg?17517267",
+
+"https://wimg.rule34.xxx//images/781/9de524c204f3b9d2fe565da4c00c3ad3.jpeg?9853796"
+
+];
+
+let actual = 0;
+
+function abrir(i){
+
+    actual = i;
+
+    document.getElementById("lightbox").classList.add("activo");
+
+    actualizar();
+}
+
+function cerrar(){
+
+    document.getElementById("lightbox").classList.remove("activo");
+}
+
+function actualizar(){
+
+    document.getElementById("imagenGrande").src =
+    imagenes[actual];
+}
+
+function siguiente(){
+
+    actual++;
+
+    if(actual >= imagenes.length){
+        actual = 0;
+    }
+
+    actualizar();
+}
+
+function anterior(){
+
+    actual--;
+
+    if(actual < 0){
+        actual = imagenes.length - 1;
+    }
+
+    actualizar();
+}
+
+document.addEventListener("keydown", function(e){
+
+    const visor =
+    document.getElementById("lightbox");
+
+    if(!visor.classList.contains("activo"))
+        return;
+
+    if(e.key === "ArrowRight"){
+        siguiente();
+    }
+
+    if(e.key === "ArrowLeft"){
+        anterior();
+    }
+
+    if(e.key === "Escape"){
+        cerrar();
+    }
+
+});
+
+</script>
+
+</body>
+</html>
