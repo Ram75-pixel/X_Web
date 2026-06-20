@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maomao</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:url("https://wimg.rule34.xxx//samples/2068/sample_701b7f3a00847db22a73610a6592942c.jpg?9973234") no-repeat center center fixed;
+    background-size:cover;
+    color:white;
+}
+
+/* BOTÓN VOLVER */
+
+.boton-volver{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+
+    background: rgba(0,0,0,0.6);
+
+    border-radius: 12px;
+    transition: 0.3s;
+    z-index: 10000;
+}
+
+.boton-volver:hover{
+    background: rgba(0,0,0,0.9);
+    transform: scale(1.1);
+}
+
+/* BOTÓN HOME */
+
+.boton-home{
+    position: fixed;
+    top: 20px;
+    left: 90px;
+
+    width: 55px;
+    height: 55px;
+
+    background:#A10202;
+
+    border-radius:12px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:0.3s;
+    z-index:10000;
+}
+
+.boton-home:hover{
+    background:#A10202;
+    transform:scale(1.1);
+}
+
+/* CASA */
+
+.casa{
+    position: relative;
+    width: 26px;
+    height: 26px;
+}
+
+.techo{
+    position:absolute;
+    top:2px;
+    left:4px;
+
+    width:14px;
+    height:14px;
+
+    border-top:4px solid white;
+    border-left:4px solid white;
+
+    transform: rotate(45deg);
+}
+
+.cuerpo{
+    position:absolute;
+    bottom:1px;
+    left:5px;
+
+    width:16px;
+    height:12px;
+
+    border:4px solid white;
+    border-top:none;
+
+    box-sizing:border-box;
+}
+
+/* CONTENIDO */
+
+.contenedor{
+    max-width:1800px;
+    margin:auto;
+    padding:80px 25px 50px;
+}
+
+.titulo{
+    text-align:center;
+    font-size:3em;
+    margin-bottom:25px;
+    color: #00A664;
+    text-shadow:0 0 15px black;
+}
+
+.resumen{
+    background:rgba(0,0,0,0.7);
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:35px;
+    text-align:center;
+}
+
+/* GALERÍA */
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    gap:15px;
+}
+
+.galeria img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.galeria img:hover{
+    transform:scale(1.03);
+}
+
+/* LIGHTBOX */
+
+.lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.97);
+    z-index:9999;
+}
+
+.lightbox.activo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.lightbox img{
+    width:auto;
+    height:auto;
+
+    max-width:98vw;
+    max-height:98vh;
+
+    border-radius:10px;
+}
+
+/* CERRAR */
+
+.cerrar{
+    position:absolute;
+    top:15px;
+    right:30px;
+    font-size:55px;
+    cursor:pointer;
+    user-select:none;
+    color:#910000;
+    font-weight:bold;
+}
+
+/* FLECHAS */
+
+.flecha{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:70px;
+    cursor:pointer;
+    user-select:none;
+    padding:20px;
+    color:#89D189;
+    font-weight:bold;
+}
+
+.izquierda{
+    left:15px;
+}
+
+.derecha{
+    right:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- BOTÓN VOLVER -->
+<a href="Otros_Galería.html" class="boton-volver">←</a>
+
+<!-- BOTÓN HOME -->
+<a href="../index.html" class="boton-home">
+
+    <div class="casa">
+        <div class="techo"></div>
+        <div class="cuerpo"></div>
+    </div>
+
+</a>
+
+<div class="contenedor">
+
+<h1 class="titulo">
+    Maomao
+</h1>
+
+<div class="resumen">
+    [ La elfa zorra en The Dragon Prince ]
+</div>
+
+<div class="galeria">
+
+    <img src="https://wimg.rule34.xxx//samples/2713/sample_60f338349d91b5fd043ed683593c85c6.jpg?17754521" onclick="abrir(0)">
+
+    <img src="https://wimg.rule34.xxx//samples/3812/sample_7913152ec464f00494024146b2cb5a29.jpg?16888288" onclick="abrir(1)">
+
+    <img src="https://wimg.rule34.xxx//samples/3304/sample_6c4ea906877b3b7e0ce38fa0ee84dbfb.jpg?16292555" onclick="abrir(2)">
+
+    <img src="https://wimg.rule34.xxx//samples/1892/sample_288243657a2e15268eb4d41409123bf6.jpg?16032568" onclick="abrir(3)">
+
+    <img src="https://wimg.rule34.xxx//samples/2264/sample_6413b933b8dae9acec3d563cf250b455.jpg?15243973" onclick="abrir(4)">
+
+    <img src="https://wimg.rule34.xxx//samples/2718/sample_662d4c35011b7a0d109f850e5a43d5ef.jpg?14993881" onclick="abrir(5)">
+
+    <img src="https://wimg.rule34.xxx//images/476/fdf3b53131e77cfee6ed1555206a83c2.jpeg?11161868" onclick="abrir(6)">
+
+    <img src="https://wimg.rule34.xxx//samples/6947/sample_8db03b64798577aa148e460b6af57faa.jpg?7925002" onclick="abrir(7)">
+
+    <img src="https://wimg.rule34.xxx//samples/1378/sample_521d562e895218678d733b5e2fe47516.jpg?13790795" onclick="abrir(8)">
+
+    <img src="https://wimg.rule34.xxx//samples/2771/sample_0f072cfbb9598b32f067bfdaed5c25e5.jpg?13723221" onclick="abrir(9)">
+
+    <img src="https://wimg.rule34.xxx//samples/3175/sample_3079202c055691e76eb58bc2b3be0bd5.jpg?3566668" onclick="abrir(10)">
+
+    <img src="https://wimg.rule34.xxx//samples/3780/sample_45b74538d843a129c76784192e20c2d2.jpg?16170461" onclick="abrir(11)">
+
+
+
+</div>
+
+</div>
+
+<div class="lightbox" id="lightbox">
+
+    <span class="cerrar" onclick="cerrar()">×</span>
+
+    <div class="flecha izquierda" onclick="anterior()">❮</div>
+
+    <img id="imagenGrande">
+
+    <div class="flecha derecha" onclick="siguiente()">❯</div>
+
+</div>
+
+<script>
+
+const imagenes = [
+
+"https://wimg.rule34.xxx//samples/2713/sample_60f338349d91b5fd043ed683593c85c6.jpg?17754521",
+
+"https://wimg.rule34.xxx//samples/3812/sample_7913152ec464f00494024146b2cb5a29.jpg?16888288",
+
+"https://wimg.rule34.xxx//samples/3304/sample_6c4ea906877b3b7e0ce38fa0ee84dbfb.jpg?16292555",
+
+"https://wimg.rule34.xxx//samples/1892/sample_288243657a2e15268eb4d41409123bf6.jpg?16032568",
+
+"https://wimg.rule34.xxx//samples/2264/sample_6413b933b8dae9acec3d563cf250b455.jpg?15243973",
+
+"https://wimg.rule34.xxx//samples/2718/sample_662d4c35011b7a0d109f850e5a43d5ef.jpg?14993881",
+
+"https://wimg.rule34.xxx//images/476/fdf3b53131e77cfee6ed1555206a83c2.jpeg?11161868",
+
+"https://wimg.rule34.xxx//samples/6947/sample_8db03b64798577aa148e460b6af57faa.jpg?7925002",
+
+"https://wimg.rule34.xxx//samples/1378/sample_521d562e895218678d733b5e2fe47516.jpg?13790795",
+
+"https://wimg.rule34.xxx//samples/2771/sample_0f072cfbb9598b32f067bfdaed5c25e5.jpg?13723221",
+
+"https://wimg.rule34.xxx//samples/3175/sample_3079202c055691e76eb58bc2b3be0bd5.jpg?3566668",
+
+"https://wimg.rule34.xxx//samples/3780/sample_45b74538d843a129c76784192e20c2d2.jpg?16170461"
+
+];
+
+let actual = 0;
+
+function abrir(i){
+
+    actual = i;
+
+    document.getElementById("lightbox").classList.add("activo");
+
+    actualizar();
+}
+
+function cerrar(){
+
+    document.getElementById("lightbox").classList.remove("activo");
+}
+
+function actualizar(){
+
+    document.getElementById("imagenGrande").src =
+    imagenes[actual];
+}
+
+function siguiente(){
+
+    actual++;
+
+    if(actual >= imagenes.length){
+        actual = 0;
+    }
+
+    actualizar();
+}
+
+function anterior(){
+
+    actual--;
+
+    if(actual < 0){
+        actual = imagenes.length - 1;
+    }
+
+    actualizar();
+}
+
+document.addEventListener("keydown", function(e){
+
+    const visor =
+    document.getElementById("lightbox");
+
+    if(!visor.classList.contains("activo"))
+        return;
+
+    if(e.key === "ArrowRight"){
+        siguiente();
+    }
+
+    if(e.key === "ArrowLeft"){
+        anterior();
+    }
+
+    if(e.key === "Escape"){
+        cerrar();
+    }
+
+});
+
+</script>
+
+</body>
+</html>

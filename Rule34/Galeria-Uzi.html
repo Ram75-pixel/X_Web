@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>__</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:url("__") no-repeat center center fixed;
+    background-size:cover;
+    color:white;
+}
+
+/* BOTÓN VOLVER */
+
+.boton-volver{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+
+    width: 55px;
+    height: 55px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+
+    background: rgba(0,0,0,0.6);
+
+    border-radius: 12px;
+    transition: 0.3s;
+    z-index: 10000;
+}
+
+.boton-volver:hover{
+    background: rgba(0,0,0,0.9);
+    transform: scale(1.1);
+}
+
+/* BOTÓN HOME */
+
+.boton-home{
+    position: fixed;
+    top: 20px;
+    left: 90px;
+
+    width: 55px;
+    height: 55px;
+
+    background:#A10202;
+
+    border-radius:12px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:0.3s;
+    z-index:10000;
+}
+
+.boton-home:hover{
+    background:#A10202;
+    transform:scale(1.1);
+}
+
+/* CASA */
+
+.casa{
+    position: relative;
+    width: 26px;
+    height: 26px;
+}
+
+.techo{
+    position:absolute;
+    top:2px;
+    left:4px;
+
+    width:14px;
+    height:14px;
+
+    border-top:4px solid white;
+    border-left:4px solid white;
+
+    transform: rotate(45deg);
+}
+
+.cuerpo{
+    position:absolute;
+    bottom:1px;
+    left:5px;
+
+    width:16px;
+    height:12px;
+
+    border:4px solid white;
+    border-top:none;
+
+    box-sizing:border-box;
+}
+
+/* CONTENIDO */
+
+.contenedor{
+    max-width:1800px;
+    margin:auto;
+    padding:80px 25px 50px;
+}
+
+.titulo{
+    text-align:center;
+    font-size:3em;
+    margin-bottom:25px;
+    color: #F3D210;
+    text-shadow:0 0 15px black;
+}
+
+.resumen{
+    background:rgba(0,0,0,0.7);
+    padding:25px;
+    border-radius:20px;
+    margin-bottom:35px;
+    text-align:center;
+}
+
+/* GALERÍA */
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(6, 1fr);
+    gap:15px;
+}
+
+.galeria img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:15px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.galeria img:hover{
+    transform:scale(1.03);
+}
+
+/* LIGHTBOX */
+
+.lightbox{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.97);
+    z-index:9999;
+}
+
+.lightbox.activo{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.lightbox img{
+    width:auto;
+    height:auto;
+
+    max-width:98vw;
+    max-height:98vh;
+
+    border-radius:10px;
+}
+
+/* CERRAR */
+
+.cerrar{
+    position:absolute;
+    top:15px;
+    right:30px;
+    font-size:55px;
+    cursor:pointer;
+    user-select:none;
+    color:#910000;
+    font-weight:bold;
+}
+
+/* FLECHAS */
+
+.flecha{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    font-size:70px;
+    cursor:pointer;
+    user-select:none;
+    padding:20px;
+    color:#89D189;
+    font-weight:bold;
+}
+
+.izquierda{
+    left:15px;
+}
+
+.derecha{
+    right:15px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- BOTÓN VOLVER -->
+<a href="Murder Drones_Galería.html" class="boton-volver">←</a>
+
+<!-- BOTÓN HOME -->
+<a href="../index.html" class="boton-home">
+
+    <div class="casa">
+        <div class="techo"></div>
+        <div class="cuerpo"></div>
+    </div>
+
+</a>
+
+<div class="contenedor">
+
+<h1 class="titulo">
+    ___
+</h1>
+
+<div class="resumen">
+    [__]
+</div>
+
+<div class="galeria">
+
+    <img src="__" onclick="abrir(0)">
+
+    <img src="__" onclick="abrir(1)">
+
+    <img src="__" onclick="abrir(2)">
+
+    <img src="__" onclick="abrir(3)">
+
+    <img src="__" onclick="abrir(4)">
+
+    <img src="__" onclick="abrir(5)">
+
+    <img src="__" onclick="abrir(6)">
+
+    <img src="__" onclick="abrir(7)">
+
+    <img src="__" onclick="abrir(8)">
+
+    <img src="__" onclick="abrir(9)">
+
+    <img src="https://i.postimg.cc/xj72LdbG/Proximamente-(Img).jpg" onclick="abrir(10)">
+
+
+</div>
+
+</div>
+
+<div class="lightbox" id="lightbox">
+
+    <span class="cerrar" onclick="cerrar()">×</span>
+
+    <div class="flecha izquierda" onclick="anterior()">❮</div>
+
+    <img id="imagenGrande">
+
+    <div class="flecha derecha" onclick="siguiente()">❯</div>
+
+</div>
+
+<script>
+
+const imagenes = [
+
+"__",
+
+"__",
+
+"__",
+
+"__",
+
+"__",
+
+"__",
+
+"__",
+
+"__",
+
+"__",
+
+"__",
+
+"https://i.postimg.cc/xj72LdbG/Proximamente-(Img).jpg"
+
+
+];
+
+let actual = 0;
+
+function abrir(i){
+
+    actual = i;
+
+    document.getElementById("lightbox").classList.add("activo");
+
+    actualizar();
+}
+
+function cerrar(){
+
+    document.getElementById("lightbox").classList.remove("activo");
+}
+
+function actualizar(){
+
+    document.getElementById("imagenGrande").src =
+    imagenes[actual];
+}
+
+function siguiente(){
+
+    actual++;
+
+    if(actual >= imagenes.length){
+        actual = 0;
+    }
+
+    actualizar();
+}
+
+function anterior(){
+
+    actual--;
+
+    if(actual < 0){
+        actual = imagenes.length - 1;
+    }
+
+    actualizar();
+}
+
+document.addEventListener("keydown", function(e){
+
+    const visor =
+    document.getElementById("lightbox");
+
+    if(!visor.classList.contains("activo"))
+        return;
+
+    if(e.key === "ArrowRight"){
+        siguiente();
+    }
+
+    if(e.key === "ArrowLeft"){
+        anterior();
+    }
+
+    if(e.key === "Escape"){
+        cerrar();
+    }
+
+});
+
+</script>
+
+</body>
+</html>
